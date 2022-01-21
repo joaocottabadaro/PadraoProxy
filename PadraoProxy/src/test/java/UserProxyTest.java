@@ -32,7 +32,7 @@ public class UserProxyTest {
     @Test
     void mustThrowIllegalArgumentExceptionNoAvailable() {
         try {
-            Bank bank = new Bank("site.com", 500);
+            Bank bank = new Bank("123", 500);
             UserProxy user = new UserProxy("123");
 
             user.withdrawMoney(bank);
